@@ -168,14 +168,21 @@ body {
 
 .published-container .markdown-rendered h1 {
   margin: 0.5em 0 0.5em;
-  border-bottom: none;
-  padding-bottom: 0px;
+  padding-bottom: 8px;
   text-wrap: balance;
+  border-bottom: 4px double var(--text-normal);
 }
 
 .published-container .markdown-rendered h2 {
   margin: 0.5em 0 0.5em;
   text-wrap: balance;
+  border-bottom: 0px solid var(--text-normal);
+  padding-bottom: 4px;
+}
+
+/* SIDEBAR BORDER */
+.site-body-left-column {
+  border-right: 4px double var(--text-normal);
 }
 
 /* IMAGES */
@@ -507,7 +514,7 @@ a.tag:hover {
 /* QUOTES */
 
 body {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.15);
   --background-alt-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
   --background-alt-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
   --blockquote-border-thickness: 3px;
